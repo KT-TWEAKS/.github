@@ -24,10 +24,10 @@ Ferramentas que modificam o Windows com privilégio de **TrustedInstaller** — 
 
 | Projeto | Descrição |
 |---------|-----------|
-| **[KT-WIRZADE](https://github.com/KT-TWEAKS/KT-WIRZADE)** | Motor de otimização por playbooks `.apbx` (YAML + 7z): rollback real, rollback IPC seguro, modo ISO/USB, multiplaybook, multi-idioma PT-BR/EN |
+| **[KT-WIRZADE](https://github.com/KT-TWEAKS/KT-WIRZADE)** | Motor de otimização por playbooks `.apbx` (YAML + 7z): rollback real, IPC seguro, modo ISO/USB, multiplaybook, multi-idioma PT-BR/EN — *em desenvolvimento, primeiro release em breve* |
 | **[APBX Developer]** (incluído no pacote) | Análisa playbooks sem aplicar — classifica 20 tipos de ação, detecta riscos, exporta relatório |
 | **[APBX DevKit]** (incluído no pacote) | IDE para criar playbooks — valida com o mesmo parser do motor, compila `.apbx` em 1 clique |
-| **[Licensing]** (em desenvolvimento) | Painel de licenciamento para autores de playbooks |
+| **[KT-TWEAKS-APBX](https://github.com/KT-TWEAKS/KT-TWEAKS-APBX)** | Playbooks oficiais KT TWEAKS — verificados pela equipe, base de referência pra criação |
 
 ### Stack
 
