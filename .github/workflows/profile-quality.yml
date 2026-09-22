@@ -1,0 +1,68 @@
+name: Organization profile quality
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "profile/**"
+      - ".github/workflows/profile-quality.yml"
+  push:
+    branches: [main]
+    paths:
+      - "profile/**"
+      - ".github/workflows/profile-quality.yml"
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-quality-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  profile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - name: Validate organization profile content
+        run: |
+          git diff --check
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          from urllib.parse import unquote, urlparse
+
+          root = Path.cwd().resolve()
+          readme = root / "profile" / "README.md"
+          text = readme.read_text(encoding="utf-8")
+          if not text.strip():
+              raise SystemExit("profile/README.md is empty")
+          if not text.endswith("\n"):
+              raise SystemExit("profile/README.md must end with a newline")
+
+          fences = sum(1 for line in text.splitlines() if re.match(r"^\s*(`{3,}|~{3,})", line))
+          if fences % 2:
+              raise SystemExit("profile/README.md has an unmatched code fence")
+
+          links = re.findall(r"!?\[[^\]]*\]\(([^)]+)\)", text)
+          for target in links:
+              destination = target.strip().split(maxsplit=1)[0].strip("<>")
+              parsed = urlparse(destination)
+              if parsed.scheme:
+                  if parsed.scheme not in {"https", "http"} or not parsed.netloc:
+                      raise SystemExit(f"invalid external link: {destination}")
+                  continue
+              if destination.startswith("#"):
+                  continue
+              local_path = (readme.parent / unquote(parsed.path)).resolve()
+              if not local_path.is_relative_to(root):
+                  raise SystemExit(f"profile link escapes repository: {destination}")
+              if not local_path.exists():
+                  raise SystemExit(f"missing local profile asset: {destination}")
+
+          print(f"Validated profile README and {len(links)} Markdown links.")
+          PY
