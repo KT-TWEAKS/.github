@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="480" viewBox="0 0 1600 480" role="img" aria-labelledby="title desc">
+  <title id="title">KT TWEAKS</title>
+  <desc id="desc">Ferramentas abertas para personalizar, automatizar e otimizar o Windows.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10101c"/>
+      <stop offset="0.58" stop-color="#17132c"/>
+      <stop offset="1" stop-color="#0b1822"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#55d6e8"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#7557d8" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#7557d8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.045"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="480" rx="28" fill="url(#bg)"/>
+  <rect width="1600" height="480" rx="28" fill="url(#grid)"/>
+  <circle cx="1230" cy="240" r="350" fill="url(#glow)"/>
+  <path d="M64 65h85" stroke="url(#line)" stroke-width="4" stroke-linecap="round"/>
+  <text x="64" y="111" fill="#acb4c7" font-family="Arial, Helvetica, sans-serif" font-size="22" letter-spacing="6">OPEN SOURCE • WINDOWS</text>
+  <text x="60" y="241" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="104" font-weight="700" letter-spacing="-4">KT TWEAKS</text>
+  <text x="64" y="303" fill="#c6cad7" font-family="Arial, Helvetica, sans-serif" font-size="28">Personalize. Automatize. Otimize.</text>
+  <path d="M64 348h720" stroke="url(#line)" stroke-width="2" opacity="0.8"/>
+  <text x="64" y="393" fill="#9ea8bc" font-family="Arial, Helvetica, sans-serif" font-size="19" letter-spacing="3">PROJETOS  /  PLAYBOOKS  /  DOCUMENTAÇÃO</text>
+  <g transform="translate(1190 235)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle r="151" stroke="#9f87ed" stroke-opacity="0.14" stroke-width="2"/>
+    <circle r="113" stroke="#79cbdc" stroke-opacity="0.24" stroke-width="2"/>
+    <path d="M-53-10l43-43v105M53 10L10 53V-52" stroke="url(#line)" stroke-width="18"/>
+    <path d="M-28 0h56" stroke="#e8e6fc" stroke-width="9"/>
+    <circle cx="0" cy="0" r="75" stroke="url(#line)" stroke-opacity="0.75" stroke-width="3"/>
+    <circle cx="0" cy="-151" r="6" fill="#a78bfa"/>
+    <circle cx="151" cy="0" r="6" fill="#55d6e8"/>
+    <circle cx="0" cy="151" r="6" fill="#55d6e8"/>
+    <circle cx="-151" cy="0" r="6" fill="#a78bfa"/>
+  </g>
+</svg>
