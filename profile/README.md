@@ -1,46 +1,19 @@
 <div align="center">
 
-![KT TWEAKS](assets/kt-tweaks-banner.png)
+<img src="assets/kt-tweaks-header.svg" alt="KT TWEAKS — projetos abertos para Windows" width="100%">
 
-# KT TWEAKS
+<p>
+  <img src="https://img.shields.io/badge/Windows-10%20%2F%2011-7963d2?style=flat-square" alt="Windows 10 e 11">
+  <img src="https://img.shields.io/badge/c%C3%B3digo-aberto-26364a?style=flat-square" alt="Código aberto">
+</p>
 
-### ENHANCE. BUILD. OPTIMIZE.
+<p>Projetos abertos para personalizar, automatizar e otimizar o Windows com transparência e controle.</p>
 
-**Otimização de Windows de nível profissional. Codigo aberto, transparente e auditável.**
-
-[![Site](https://img.shields.io/badge/site-kt--wirzade.vercel.app-00B4D8?style=for-the-badge)](https://kt-wirzade.vercel.app)
-[![Docs](https://img.shields.io/badge/docs-tecnico-0096C7?style=for-the-badge)](https://docs-site.vercel.app)
-[![Releases](https://img.shields.io/badge/github-releases-1a1a1b?style=for-the-badge&logo=github)](https://github.com/KT-TWEAKS/KT-WIRZADE/releases)
-
-</div>
-
----
-
-## O que fazemos
-
-Ferramentas que modificam o Windows com privilégio de **TrustedInstaller** — mas com transparência total: código aberto, auditoria de cada playbook e ferramentas dedicadas para quem cria.
-
-### Projetos principais
-
-| Projeto | Descrição |
-|---------|-----------|
-| **[KT-WIRZADE](https://github.com/KT-TWEAKS/KT-WIRZADE)** | Motor de otimização por playbooks `.apbx` (YAML + 7z): rollback real, IPC seguro, modo ISO/USB, multiplaybook, multi-idioma PT-BR/EN — *em desenvolvimento, primeiro release em breve* |
-| **[APBX Developer]** (incluído no pacote) | Análisa playbooks sem aplicar — classifica 20 tipos de ação, detecta riscos, exporta relatório |
-| **[APBX DevKit]** (incluído no pacote) | IDE para criar playbooks — valida com o mesmo parser do motor, compila `.apbx` em 1 clique |
-| **[KT-TWEAKS-APBX](https://github.com/KT-TWEAKS/KT-TWEAKS-APBX)** | Playbooks oficiais KT TWEAKS — verificados pela equipe, base de referência pra criação |
-
-### Stack
-
-`C#` · `.NET 4.8` · `WPF` · `PowerShell` · `C/C++` · `Rust` · `TypeScript` · `HTML5` · `CSS3` · `JavaScript` · `Node.js` · `React` · `Electron` · `Vite`
-
----
-
-<div align="center">
-
-> **"Enhance. Build. Optimize."**
->
-> Otimização não precisa ser caixa-preta. Toda a lógica é auditável, testável e reversível.
-
-[![Siga](https://img.shields.io/badge/siga-nos-black?style=for-the-badge&logo=github)](https://github.com/KT-TWEAKS)
+<p>
+  <a href="https://kt-wirzade-site.vercel.app/">Site</a> ·
+  <a href="https://kt-wirzade-site.vercel.app/docs">Documentação</a> ·
+  <a href="https://github.com/orgs/KT-TWEAKS/repositories">Projetos</a> ·
+  <a href="https://kt-tweaks-apbx.vercel.app/">Playbooks</a>
+</p>
 
 </div>
